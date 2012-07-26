@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.log("Bong");
+
+        $.post('http://utility.jobodesigns.com.rose.arvixe.com/CurrentProject/CurrentProject', {}, function (response) {
+            console.log(response.value);
+        });
+
+    });
+
+</script>
